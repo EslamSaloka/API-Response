@@ -1,0 +1,37 @@
+{
+    "name": "bugaia/api",
+    "description": "component Method",
+    "type": "library",
+    "version":"1.0",
+    "license": "BUGaia Company",
+    "authors": [
+        {
+            "name": "Eslam Mohsen Handousa",
+            "email": "eslammohsenhandousa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/Helpers/helper.php"
+        ],
+        "psr-4": {
+            "BUGaia\\BUGaiaAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BUGaia\\BUGaiaAPI\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BUGaia\\BUGaiaAPI\\APIServiceProvider"
+            ],
+            "aliases": {
+                "API": "BUGaia\\BUGaiaAPI\\API"
+            }
+        }
+    }
+}
