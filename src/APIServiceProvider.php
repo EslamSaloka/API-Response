@@ -2,11 +2,11 @@
 
 namespace BUGaia\BUGaiaAPI;
 
-use Asga\AdminPanel\BaseServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Asga\API\Exceptions\Handler;
+use BUGaia\BUGaiaAPI\Exceptions\Handler;
 
-class APIServiceProvider extends BaseServiceProvider {
+class APIServiceProvider extends ServiceProvider {
 
     public function register() 
     {
